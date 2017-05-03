@@ -19,12 +19,13 @@ int main(int argc, char** argv)
 	return handle_request();
 }
 
-bool handle_request()
+bool handle_request(char * resp)
 {
-	while(true)
+	char str[60];
+	printf("Hello from xinetd service(waiting for input):\nHUMAN: ");
+	while(fgets (str, 60, stdin) != NULL)
 	{
-		printf("Hello xinetd service\n");
-		break;	
+		printf("SERVER: %s\nHUMAN: ", str);
 	}
 	return EXIT_SUCCESS;
 }
@@ -32,6 +33,6 @@ bool handle_request()
 
 void sig_handler(int signal)
 {
-	printf("\nInterrupt signal ( %d ) received...\nClosing server socket...\n", signal);
+	printf("\nInterrupt signal ( %d ) received...\nTut de la frut...\n", signal);
 	exit(EXIT_SUCCESS);
 }
