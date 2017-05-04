@@ -1,0 +1,8 @@
+--- /etc/services	2017-05-04 20:59:04.351562735 +0200
++++ /etc/services	2017-05-04 20:27:51.612312452 +0200
+@@ -11323,4 +11323,4 @@
+ robotraconteur  48653/udp               # Robot Raconteur transport
+ matahari        49000/tcp               # Matahari Broker
+
+-
++myhello		60006/tcp                # myhello simple service

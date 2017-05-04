@@ -4,9 +4,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-
-
-
 bool handle_request();
 void sig_handler(int signal);
 /*
@@ -25,11 +22,11 @@ bool handle_request(char * resp)
 	printf("Hello from xinetd service(waiting for input):\nHUMAN: ");
 	while(fgets (str, 60, stdin) != NULL)
 	{
-		printf("SERVER: %s\nHUMAN: ", str);
+		printf("SERVER: %s\n", str);
+		break;
 	}
 	return EXIT_SUCCESS;
 }
-
 
 void sig_handler(int signal)
 {
