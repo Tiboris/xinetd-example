@@ -32,4 +32,6 @@
 *.dSYM/
 *.su
 
+.remote-sync.json
+
 server
