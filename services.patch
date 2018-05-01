@@ -5,4 +5,4 @@
  matahari        49000/tcp               # Matahari Broker
 
 -
-+myhello		60006/tcp                # myhello simple service
++budgerigar		60006/tcp                # budgerigar simple service

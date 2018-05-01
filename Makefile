@@ -1,13 +1,13 @@
 # Author Tibor Dudlák xdudla00@stud.fit.vutbr.cz
 C = gcc
-CFLAGS = -O3 -g -Wall -Wextra -pedantic -std=c++11
+CFLAGS = -O3 -g -Wall -Wextra -pedantic
 
 default: server
 
-server: server.o
-	$(C) server.o -o server
+server: budgerigar.o
+	$(C) budgerigar.o -o budgerigar
 
-server.o: server.c
+server.o: budgerigar.c
 
 clean:
-	rm -f server *.o
+	rm -f budgerigar *.o
